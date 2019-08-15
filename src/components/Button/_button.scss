@@ -1,0 +1,24 @@
+@import "../../style/vars";
+
+.button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  &--color-red {
+    background-color: rgba($color: $color-button-red, $alpha: 1);
+    color: white;
+  }
+  &--size-res {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    font-size: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

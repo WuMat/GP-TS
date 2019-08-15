@@ -1,0 +1,75 @@
+@import "../../style/vars";
+
+.navigation {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    li {
+      height: 100%;
+      width: 100%;
+      list-style-type: none;
+      color: rgba($color: $color-almost-red, $alpha: 1);
+      font-size: 14px;
+      padding: 0 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+      position: relative;
+      z-index: 100;
+
+      &::before {
+        content: "";
+        transition: all 0.5s;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: rgba($color: $color-almost-red, $alpha: 1);
+        transform: scale(0);
+        left: 0;
+      }
+      &::after {
+        transition: all 0.5s;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: rgba($color: $color-almost-red, $alpha: 1);
+        transform: scale(0);
+        right: 0;
+      }
+      &:hover {
+        background-color: rgba($color: $color-almost-red, $alpha: 0.1);
+        cursor: pointer;
+        &::before {
+          transform: scale(1);
+        }
+        &::after {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  .navigation {
+    ul {
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 1120px) {
+  .navigation {
+    ul {
+      li {
+        font-size: 19px;
+      }
+    }
+  }
+}
