@@ -1,0 +1,18 @@
+.polandMap {
+  width: 350px;
+  margin: 0 auto;
+  path,
+  circle {
+    transition: all 1s;
+    transform-origin: 50% 50%;
+  }
+  path:hover,
+  circle:hover {
+    transform: scale(1.01);
+    stroke: #d44828 !important;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    fill: #d44828 !important;
+    cursor: pointer;
+  }
+}

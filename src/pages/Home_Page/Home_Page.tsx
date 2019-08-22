@@ -1,12 +1,27 @@
 import React from "react";
-import PropTypes from "prop-types";
-
+import Spinner from "../../components/Spinner/Loader";
+import Poland from "../../components/PolandMap/PolandMap";
 import "./_homePage.scss";
 
 const Home_Page = () => {
-  return <div>HOME PAGE</div>;
+  return (
+    <div className="homePage">
+      <div className="wrapperTEST">
+        <br />
+        <br />
+        <br />
+        <Poland />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        HOME PAGE
+        {/* <Spinner /> */}
+      </div>
+    </div>
+  );
 };
-
-Home_Page.propTypes = {};
 
 export default Home_Page;

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./_navigation.scss";
 
 const Navigation = () => {
@@ -17,7 +16,5 @@ const Navigation = () => {
     </nav>
   );
 };
-
-Navigation.propTypes = {};
 
 export default Navigation;

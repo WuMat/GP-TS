@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Navigation from "./Navigation/Navigation";
@@ -21,7 +20,5 @@ const Layout = ({ children }: IProps) => {
     </>
   );
 };
-
-Layout.propTypes = {};
 
 export default Layout;

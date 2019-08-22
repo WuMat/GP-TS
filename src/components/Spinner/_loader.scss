@@ -1,0 +1,62 @@
+@import "../../style/vars";
+
+.loader {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .bubble {
+    height: 120px;
+    width: 100px;
+    animation: blow 1.6s linear alternate infinite;
+    background-color: $color-button-red;
+    border-radius: 50% 50% 50% 50%;
+    outline: 1px solid transparent;
+
+    &__shine {
+      background-color: white;
+      position: absolute;
+      height: 60px;
+      width: 20px;
+      border-radius: 100% 50% 40% 100% / 50% 30% 30% 100%;
+      top: 5%;
+      left: 60%;
+      transform: rotateZ(130deg);
+    }
+    &__bottom {
+      width: 0;
+      margin: 0 auto;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent$color-button-red transparent;
+    }
+  }
+}
+
+// ANIMATION
+@keyframes blow {
+  0% {
+    transform: scale(0.5) translateY(50%);
+  }
+  20% {
+    transform: scale(0.6) translateY(33%);
+  }
+  40% {
+    transform: scale(0.7) translateY(21%);
+  }
+  60% {
+    transform: scale(0.8) translateY(12%);
+  }
+  80% {
+    transform: scale(0.9) translateY(5%);
+  }
+  93%,
+  100% {
+    transform: scale(1) translateY(0) translateZ(0);
+  }
+}

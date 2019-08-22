@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./_footer.scss";
 
 interface IProps {
@@ -18,7 +17,5 @@ const Footer = ({ children }: IProps) => {
     </div>
   );
 };
-
-Footer.propTypes = {};
 
 export default Footer;

@@ -1,0 +1,99 @@
+.login {
+  padding-bottom: 50px;
+  .login_wrapper {
+    margin: 50px auto;
+    height: 310px;
+    max-width: 1200px;
+    position: relative;
+  }
+
+  .login__background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("../../images/zaloguj.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+    form {
+      width: 100%;
+    }
+  }
+  .login_submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .Inputs__wrapper {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .login__reminder {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .login__registerButton {
+    position: absolute;
+    bottom: -60px;
+    right: 30px;
+    margin-top: 30px;
+    font-size: 13px;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// .login {
+//   .login_wrapper {
+//     margin: 50px auto;
+//     height: 310px;
+//     max-width: 1200px;
+//     position: relative;
+//   }
+
+//   .login__background {
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(
+//         rgba(255, 255, 255, 0.7),
+//         rgba(255, 255, 255, 0.7)
+//       ),
+//       url("../../images/zaloguj.png");
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     overflow: hidden;
+
+//     form {
+//       width: 100%;
+//     }
+//   }
+//   .login_submit {
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-top: 20px;
+//   }
+//   .Inputs__wrapper {
+//     width: 400px;
+//   }
+//   .login__reminder {
+//     margin-top: 5px;
+//     font-size: 10px;
+//   }
+//   .login__registerButton {
+//     position: absolute;
+//     top: 60px;
+//     right: 250px;
+//     font-size: 13px;
+//     p {
+//       margin-bottom: 5px;
+//     }
+//   }
+// }

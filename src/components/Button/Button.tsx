@@ -11,6 +11,7 @@ interface IProps {
   border?: string;
   onClick?: any;
   icon?: string;
+  type: "button" | "submit" | "reset" | undefined;
 }
 const Button = ({
   label,
@@ -19,6 +20,7 @@ const Button = ({
   color,
   border,
   icon,
+  type,
   onClick
 }: IProps) => {
   const baseClass = "button";
@@ -35,7 +37,7 @@ const Button = ({
     }
   );
   return (
-    <button className={classes} onClick={onClick}>
+    <button className={classes} type={type} onClick={onClick}>
       {icon && (
         <span className="button__icon">
           <i className={icon} />

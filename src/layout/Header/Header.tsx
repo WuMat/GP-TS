@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Logo from "../../images/logo.png";
-import PropTypes from "prop-types";
 import Button from "../../components/Button/Button";
 
 import "./_header.scss";
@@ -14,15 +15,21 @@ const Header = ({ children }: IProps) => {
     <div className="header">
       <div className="header__img" />
       <div className="header__top">
-        <div className="wrapper">
+        <div className="wrapper2">
           <div className="top__container">
-            <img src={Logo} />
+            <div>
+              <Link to="/homepage">
+                <img src={Logo} alt="logo" />
+              </Link>
+            </div>
+
             <div className="top__button">
               <Button
                 label="Zaproponuj nową lokalizacje"
                 color="red"
                 size="res"
                 icon="fas fa-map-marker-alt"
+                type="button"
               />
             </div>
             <div className="top__InfoLocation">
@@ -37,7 +44,14 @@ const Header = ({ children }: IProps) => {
             <div className="header__userPanel">
               <div className="header__statsUser">Do odwiedzenia (23)</div>
               <div className="header__buttonAccount">
-                <Button label="Twoje Konto" color="red" size="res" />
+                <Link to="/login">
+                  <Button
+                    label="Twoje Konto"
+                    color="red"
+                    size="res"
+                    type="button"
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -62,7 +76,5 @@ const Header = ({ children }: IProps) => {
     </div>
   );
 };
-
-Header.propTypes = {};
 
 export default Header;

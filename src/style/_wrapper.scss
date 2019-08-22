@@ -1,13 +1,14 @@
 .wrapper {
   margin: 0 auto;
   height: inherit;
-  width: 100%;
+  width: 95%;
+  height: 100%;
 }
 @media (min-width: 700px) {
   .wrapper {
     padding: 0;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
   }
 }
 @media (min-width: 1500px) {
@@ -21,6 +22,56 @@
   .wrapper {
     padding: 0;
     margin: 0 auto;
-    width: 85%;
+    max-width: 1692px;
+  }
+}
+
+.wrapper2 {
+  margin: 0 auto;
+  height: inherit;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1500px) {
+  .wrapper2 {
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+@media (min-width: 1700px) {
+  .wrapper2 {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1692px;
+  }
+}
+
+.wrapperTEST {
+  margin: 0 auto;
+  height: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+@media (min-width: 700px) {
+  .wrapperTEST {
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+@media (min-width: 1500px) {
+  .wrapperTEST {
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+@media (min-width: 1700px) {
+  .wrapperTEST {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1692px;
   }
 }
