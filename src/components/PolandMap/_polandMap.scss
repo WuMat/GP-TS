@@ -1,6 +1,5 @@
 .polandMap {
-  width: 350px;
-  margin: 0 auto;
+  width: 100%;
   path,
   circle {
     transition: all 1s;
@@ -9,8 +8,8 @@
   path:hover,
   circle:hover {
     transform: scale(1.01);
-    stroke: #d44828 !important;
-    stroke-width: 2px;
+    // stroke: #d44828 !important;
+    stroke-width: 10px;
     stroke-linejoin: round;
     fill: #d44828 !important;
     cursor: pointer;

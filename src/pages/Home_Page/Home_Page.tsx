@@ -1,25 +1,44 @@
 import React from "react";
-import Spinner from "../../components/Spinner/Loader";
+import Spinner from "../../components/Loader/Loader";
 import Poland from "../../components/PolandMap/PolandMap";
+import Slider from "../../components/Slider/Slider";
 import "./_homePage.scss";
 
-const Home_Page = () => {
+const Home_Page: React.FC = () => {
   return (
     <div className="homePage">
-      <div className="wrapperTEST">
-        <br />
-        <br />
-        <br />
-        <Poland />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        HOME PAGE
-        {/* <Spinner /> */}
-      </div>
+      {/* <div className="wrapper"> */}
+      {/* <article className="homePage__MapSLiderWrapper">
+          <section className="homePage__polandMapWrapper">
+            <p>Znajdź atrakcje w danym województwie</p>
+            <div className="homePage__map">
+              <Poland />
+            </div>
+          </section>
+          <section className="homePage__slider">
+            <Slider />
+          </section>
+        </article> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      HOME PAGE
+      <div
+        style={{
+          height: "400px",
+          backgroundColor: "red",
+          width: "80%",
+          margin: "0 auto"
+        }}
+      ></div>
+      <Spinner />
+      {/* </div> */}
     </div>
   );
 };

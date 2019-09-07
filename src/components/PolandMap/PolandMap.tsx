@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, MouseEvent } from "react";
 import { Provinces } from "../../Enums/provinces";
+import * as d3 from "d3";
+
 import "./_polandMap.scss";
-const PolandMap = () => {
-  const handleClick = (e: any) => {
-    console.log("siema", e.target.id);
+const PolandMap: React.FC = () => {
+  const handleClick = (e: MouseEvent<SVGSVGElement>) => {
+    const { id } = e.target as HTMLInputElement;
+    console.log(id);
   };
+
   return (
     <div className="polandMap">
       <svg
@@ -14,7 +18,7 @@ const PolandMap = () => {
         stroke="#ffffff"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth="2"
+        strokeWidth="4"
         version="1.2"
         viewBox="0 0 1000 940"
         // width="1000"

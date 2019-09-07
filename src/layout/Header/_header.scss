@@ -118,6 +118,9 @@
             &:nth-child(1) {
               display: none;
             }
+            &:nth-child(3) {
+              display: none;
+            }
             &:nth-child(4) {
               display: none;
             }
@@ -137,7 +140,7 @@
   .header {
     &__photos {
       height: 400px;
-      width: 100%;
+      width: 98%;
       margin: 0 auto;
       position: absolute;
       top: 50px;
@@ -212,6 +215,9 @@
           li {
             &:nth-child(1) {
               display: none;
+            }
+            &:nth-child(3) {
+              display: block;
             }
             &:nth-child(4) {
               display: none;

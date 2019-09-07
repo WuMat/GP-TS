@@ -1,20 +1,9 @@
 import React from "react";
 import classNames from "classnames";
-
+import { InputInterface } from "../../interfaces/input";
 import "./_input.scss";
 
-interface IProps {
-  type: string;
-  placeholder?: string;
-  description?: string;
-  error?: string;
-  width?: string;
-  onChange?: any;
-  name: string;
-  color?: string;
-}
-
-const Input = ({
+const Input: React.FC<InputInterface> = ({
   type,
   placeholder,
   description,
@@ -23,7 +12,7 @@ const Input = ({
   onChange,
   name,
   color
-}: IProps) => {
+}) => {
   const baseClass = "Input";
   const classes = classNames(baseClass, {
     [`${baseClass}--width-${width}`]: !!width

@@ -1,2 +1,25 @@
 .homePage {
+  &__MapSLiderWrapper {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    // height: 400px;
+  }
+  &__polandMapWrapper {
+    width: 100%;
+    // display: none;
+  }
+
+  &__map {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+  }
+  &__slider {
+    display: none;
+    width: 75%;
+    height: 100%;
+    max-width: 1000px;
+  }
 }
