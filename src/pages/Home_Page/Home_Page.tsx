@@ -7,8 +7,8 @@ import "./_homePage.scss";
 const Home_Page: React.FC = () => {
   return (
     <div className="homePage">
-      {/* <div className="wrapper"> */}
-      {/* <article className="homePage__MapSLiderWrapper">
+      <div className="wrapper">
+        <article className="homePage__MapSLiderWrapper">
           <section className="homePage__polandMapWrapper">
             <p>Znajdź atrakcje w danym województwie</p>
             <div className="homePage__map">
@@ -18,27 +18,19 @@ const Home_Page: React.FC = () => {
           <section className="homePage__slider">
             <Slider />
           </section>
-        </article> */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      HOME PAGE
-      <div
-        style={{
-          height: "400px",
-          backgroundColor: "red",
-          width: "80%",
-          margin: "0 auto"
-        }}
-      ></div>
-      <Spinner />
-      {/* </div> */}
+        </article>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        HOME PAGE
+        <Spinner />
+      </div>
     </div>
   );
 };

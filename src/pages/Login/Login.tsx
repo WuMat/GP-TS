@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import TitleInfo from "../../components/Title_info/Title_info";
-import { Link } from "react-router-dom";
-import Input from "../../components/Input/Input";
-import Button from "../../components/Button/Button";
+import React, { useState } from 'react';
+import TitleInfo from '../../components/Title_info/Title_info';
+import { Link } from 'react-router-dom';
+import Input from '../../components/Input/Input';
+import Button from '../../components/Button/Button';
 
-import "./_login.scss";
+import './_login.scss';
 
 const Login = () => {
   const [registerValues, setRegisterValues] = useState({});
@@ -16,7 +16,7 @@ const Login = () => {
 
   const loginHandler = (e: any) => {
     e.preventDefault();
-    console.log("zaloguj");
+    console.log('zaloguj');
   };
   return (
     <div className="login">
