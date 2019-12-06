@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import logger from "redux-logger";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-
+//test
 declare global {
   interface Window {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: any;
