@@ -1,0 +1,22 @@
+.addPlace {
+  width: 1300px;
+  margin: 60px auto;
+
+  &__basicInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #852c17;
+  }
+
+  &__details {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #852c17;
+  }
+}

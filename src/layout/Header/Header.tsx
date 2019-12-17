@@ -24,6 +24,8 @@ const Header = ({ children }: IProps) => {
             </div>
 
             <div className="top__button">
+            <Link to="/addplace">
+
               <Button
                 label="Zaproponuj nową lokalizacje"
                 color="red"
@@ -31,6 +33,7 @@ const Header = ({ children }: IProps) => {
                 icon="fas fa-map-marker-alt"
                 type="button"
               />
+              </Link>
             </div>
             <div className="top__InfoLocation">
               <ul>

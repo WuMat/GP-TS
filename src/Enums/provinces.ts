@@ -1,4 +1,4 @@
-export enum Provinces {
+export enum ProvincesENG {
   West_Pomerania, //zachodniopomorskie
   Pomerania, //pomorskie
   Warmia_Masuria, //warmińsko-mazurskie
@@ -15,4 +15,23 @@ export enum Provinces {
   Hole_Cross, //świetokrzyskie
   Lublin_Province, //lubelskie
   Subcarpathia //podkarpackie
+}
+
+export enum ProvincesPL {
+  Zachodniopomorskie,
+  Pomorskie,
+  "Warmińsko-mazurskie",
+  Podlaskie,
+  Mazowieckie,
+  "Kujawsko-pomorskie",
+  Wielkopolskie,
+  Lubuskie,
+  Dolnośląskie,
+  Opolskie,
+  Łódzkie,
+  Śląskie,
+  Małopolskie,
+  Świetokrzyskie,
+  Lubelskie,
+  Podkarpackie
 }
